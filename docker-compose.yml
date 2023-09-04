@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  web:
+    restart: unless-stopped
+    image: 'node_v1'
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1024m"
+        max-file: "3"
+    
+  apache:
+    restart: unless-stopped
+    image: httpd:2.4.48
+    ports:
+      - 80:80
+      - 443:443
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1024m"
+        max-file: "3"
+    volumes:
+      - $PWD/src_docker/apache_data/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - $PWD/src_docker/apache_data/cxm.cer:/usr/local/apache2/conf/cxm.cer
+      - $PWD/src_docker/apache_data/cxm.key:/usr/local/apache2/conf/cxm.key
+      - $PWD/src_docker/apache_data/httpd-ssl.conf:/usr/local/apache2/conf/extra/httpd-ssl.conf
+      - $PWD/src_docker/apache_data/httpd-mpm.conf:/usr/local/apache2/conf/extra/httpd-mpm.conf
+      - $PWD/src_docker/apache_data/intermedia.cer:/usr/local/apache2/conf/intermedia.cer

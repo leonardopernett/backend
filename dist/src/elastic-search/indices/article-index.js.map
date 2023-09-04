@@ -1,0 +1,1 @@
+{"version":3,"file":"article-index.js","sourceRoot":"","sources":["../../../../src/elastic-search/indices/article-index.ts"],"names":[],"mappings":";;;;;;;;;;;;AACA,2CAA2D;AAE3D,wCAAqC;AA0BrC,IAAa,YAAY,GAAzB,MAAa,YAAa,SAAQ,iBAAgB;IAC9C;QACI,KAAK,CAAC,UAAU,EAAE,OAAO,CAAC,GAAG,CAAC,eAAe,CAAC,CAAA;IAClD,CAAC;CAEJ,CAAA;AALY,YAAY;IADxB,mBAAU,EAAE;;GACA,YAAY,CAKxB;AALY,oCAAY"}

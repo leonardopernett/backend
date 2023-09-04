@@ -1,0 +1,1 @@
+{"version":3,"file":"comments-index.js","sourceRoot":"","sources":["../../../../src/elastic-search/indices/comments-index.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,2CAA4C;AAC5C,wCAAqC;AAmBrC,IAAa,aAAa,GAA1B,MAAa,aAAc,SAAQ,iBAAgB;IAC/C;QACI,KAAK,CAAC,UAAU,EAAE,OAAO,CAAC,GAAG,CAAC,eAAe,CAAC,CAAA;IAClD,CAAC;CAEJ,CAAA;AALY,aAAa;IADzB,mBAAU,EAAE;;GACA,aAAa,CAKzB;AALY,sCAAa"}

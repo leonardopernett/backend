@@ -1,0 +1,41 @@
+import { PreturnoModelService } from '../preturno/preturno-model.service';
+export declare class PreturnoController {
+    private Preturno;
+    constructor(Preturno: PreturnoModelService);
+    insertarPreturno(body: any): Promise<any>;
+    mostrarPreturnos(body: any): Promise<import("mysql/lib/protocol/packets/OkPacket") | import("mysql/lib/protocol/packets/ResultSetHeader") | import("mysql/lib/protocol/packets/RowDataPacket")[] | import("mysql/lib/protocol/packets/RowDataPacket")[][] | import("mysql/lib/protocol/packets/OkPacket")[]>;
+    mostrarPreturnosAcargo(body: any): Promise<import("mysql/lib/protocol/packets/OkPacket") | import("mysql/lib/protocol/packets/ResultSetHeader") | import("mysql/lib/protocol/packets/RowDataPacket")[] | import("mysql/lib/protocol/packets/RowDataPacket")[][] | import("mysql/lib/protocol/packets/OkPacket")[]>;
+    mostrarPreturnosadmin(body: any): Promise<import("mysql/lib/protocol/packets/OkPacket") | import("mysql/lib/protocol/packets/ResultSetHeader") | import("mysql/lib/protocol/packets/RowDataPacket")[] | import("mysql/lib/protocol/packets/RowDataPacket")[][] | import("mysql/lib/protocol/packets/OkPacket")[]>;
+    borrarPreturnos(body: any): Promise<import("mysql/lib/protocol/packets/OkPacket") | import("mysql/lib/protocol/packets/ResultSetHeader") | import("mysql/lib/protocol/packets/RowDataPacket")[] | import("mysql/lib/protocol/packets/RowDataPacket")[][] | import("mysql/lib/protocol/packets/OkPacket")[]>;
+    actualizarPreturnos(body: any): Promise<import("mysql/lib/protocol/packets/OkPacket") | import("mysql/lib/protocol/packets/ResultSetHeader") | import("mysql/lib/protocol/packets/RowDataPacket")[] | import("mysql/lib/protocol/packets/RowDataPacket")[][] | import("mysql/lib/protocol/packets/OkPacket")[]>;
+    guardarPreguntas(body: any): Promise<void>;
+    guardarConcepto(body: any): Promise<void>;
+    validarTotal(body: any): Promise<number>;
+    TotalCargo(body: any): Promise<number>;
+    aprobacion(body: any): Promise<any>;
+    getObligatorioPreguntas(body: any): Promise<unknown[]>;
+    getObligatorioPreguntasUnica(body: any): Promise<unknown[]>;
+    getObligatorioPreguntasConcepto(body: any): Promise<unknown[]>;
+    getObligatorioRespuestasConcepto(body: any): Promise<unknown[]>;
+    guardarCuestionarioUnico(body: any): Promise<void>;
+    guardarCuestionarioConcepto(body: any): Promise<void>;
+    guardarCuestionario(body: any): Promise<void>;
+    guardarResultado(body: any): void;
+    getValidarRespuestas(body: any): Promise<{
+        validar: number;
+        validas: any;
+        total: any;
+    }>;
+    vistoMultiple(body: any): Promise<1 | 0>;
+    vistoUnico(body: any): Promise<1 | 0>;
+    vistoConcepto(body: any): Promise<1 | 0>;
+    guardarVisto(body: any): Promise<void>;
+    visto(body: any): Promise<1 | 0>;
+    validarocultar(body: any): Promise<1 | 0>;
+    avance(body: any): Promise<number>;
+    getAllPreturnoLimit(body: any, res: any): Promise<void>;
+    getallpreturnobyocrc(body: any): Promise<any>;
+    getpreturnototal(body: any): Promise<any>;
+    guardarunica(body: any): Promise<void>;
+    personasacargo(body: any): Promise<any>;
+}
